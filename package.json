@@ -1,0 +1,23 @@
+{
+  "name": "nodepipeline-project3",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhilkaladharan/NODEPIPELINE-PROJECT3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akhilkaladharan/NODEPIPELINE-PROJECT3/issues"
+  },
+  "homepage": "https://github.com/akhilkaladharan/NODEPIPELINE-PROJECT3#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "description": ""
+}
