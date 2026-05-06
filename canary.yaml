@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-app-v2
+  name: node-app-v1
 spec:
   replicas: 1   
   selector:
     matchLabels:
       app: node-app
-      version: v2
+      version: v1
   template:
     metadata:
       labels:
         app: node-app
-        version: v2
+        version: v1
     spec:
       containers:
       - name: node-app
-        image: akhiakhi1/nodepipeline:v3
+        image: akshaykrishnaa/superman:v1
         ports:
         - containerPort: 3000
 
@@ -24,12 +24,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nodejs-v3
+  name: nodejs-v1
 spec:
   type: LoadBalancer
   selector:
     app: node-app
-    version: v3
+    version: v1
   ports:
     - protocol: TCP
       port: 80
